@@ -21,4 +21,4 @@ if astronvim.default_colorscheme then
 end
 
 require("astronvim.utils").conditional_func(astronvim.user_opts("polish", nil, false), true)
-vim.cmd([[ set guicursor= ]])
+vim.cmd([[ set guicursor=a:ver25 ]])
