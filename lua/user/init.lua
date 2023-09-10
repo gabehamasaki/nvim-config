@@ -1,5 +1,5 @@
 vim.api.nvim_set_keymap('n', '<S-Tab>', ':bprev<CR>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<Tab>', ':bnext<CR>', { noremap = true })
+
 return {
   colorscheme = "rose-pine",
 
