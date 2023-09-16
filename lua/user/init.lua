@@ -1,8 +1,6 @@
 vim.api.nvim_set_keymap('n', '<S-Tab>', ':bprev<CR>', { noremap = true })
-
 return {
   colorscheme = "rose-pine",
-
   lsp = {
     config = {
       eslint = function (opts)
@@ -22,5 +20,12 @@ return {
 
   plugins = {
     { 'rose-pine/neovim', name = 'rose-pine' },
+    { 
+      'iamcco/markdown-preview.nvim', 
+      event = "BufRead",
+      build = function ()
+        vim.fn["mkdp#util#install"]()
+      end
+    }
   },
 }
